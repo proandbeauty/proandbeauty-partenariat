@@ -1,0 +1,54 @@
+{
+    "heroTitle": "Simplifiez la communication entre les marques et leurs points de vente",
+    "heroSubtitle": "Une plateforme unique pour stocker, personnaliser et diffuser facilement vos visuels, vidéos et campagnes.",
+    "primaryCtaText": "Découvrir la plateforme",
+    "secondaryCtaText": "Voir la démo",
+  
+    "advantages": [
+      {"icon":"cloud-upload-alt","title":"Stockage centralisé","text":"Remplacez vos Drive et Dropbox par une solution dédiée à la beauté avec une interface intuitive type Canva."},
+      {"icon":"paint-brush","title":"Personnalisation automatique","text":"Vos visuels s'adaptent automatiquement avec les logos, coordonnées et couleurs de chaque point de vente."},
+      {"icon":"share-nodes","title":"Programmation sociale","text":"Publiez directement sur Facebook, Instagram et envoyez vos campagnes par email en un clic."},
+      {"icon":"cogs","title":"Actions automatisées","text":"Créez des campagnes commerciales que vos clients peuvent activer instantanément."},
+      {"icon":"images","title":"Packshots professionnels","text":"Accédez à une bibliothèque de packshots détourés en haute qualité pour vos créations."},
+      {"icon":"user","title":"Simplicité d'usage","text":"Interface intuitive accessible même aux non-experts en communication."}
+    ],
+  
+    "actionsTitle": "Actions commerciales automatisées",
+    "actionsSubtitle": "Créez des campagnes que vos clients peuvent activer en un clic, sans formation ni intervention de votre part.",
+    "actionsList": [
+      "Campagnes de lancement de produits",
+      "Promotions saisonnières",
+      "Fidélisation client",
+      "Communication événementielle"
+    ],
+  
+    "libraryTitle": "Bibliothèque visuelle professionnelle",
+    "librarySubtitle": "Accédez à une vaste collection de packshots détourés de produits cosmétiques, prêts à être intégrés dans vos créations personnalisées.",
+  
+    "galleryImages": [
+      "https://images.unsplash.com/photo-1601042879364-f3947d3f9fcb?w=800&q=80",
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80",
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80"
+    ],
+  
+    "partners": [
+      "L'Oréal", "Lancôme", "Yves Saint Laurent", "Dior", "Chanel", "Estée Lauder",
+      "Clinique", "MAC", "NARS", "Urban Decay", "Too Faced", "Fenty Beauty",
+      "Glossier", "Rare Beauty", "Charlotte Tilbury", "Pat McGrath", "Huda Beauty",
+      "Anastasia Beverly Hills", "Tarte", "Benefit", "Smashbox", "Bobbi Brown",
+      "Make Up For Ever", "Sephora Collection", "Fenty Skin", "The Ordinary",
+      "Drunk Elephant", "Sunday Riley", "Tatcha", "Glow Recipe", "Kiehl's"
+    ],
+  
+    "contactTitle": "Prêt à simplifier votre communication ?",
+    "contactParagraph": "Rejoignez les marques qui ont déjà choisi Pro&Beauty pour optimiser leur communication avec leurs points de vente.",
+    "contactPhone": "09 72 57 80 15",
+    "contactEmail": "n.perren@proandbeauty.com",
+  
+    "footerTagline": "La plateforme qui simplifie la communication beauté",
+    "footerYear": "2024",
+    "footerBrand": "Pro&Beauty"
+  }
+
+  
