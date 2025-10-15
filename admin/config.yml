@@ -1,0 +1,72 @@
+backend:
+  name: github
+  repo: proandbeauty/proandbeauty-partenariat   # dépôt GitHub où est hébergé ton site
+  branch: main
+  base_url: "https://proandbeauty-oauth.vercel.app"  # ton serveur OAuth hébergé sur Vercel
+  auth_endpoint: "/api/auth"
+
+media_folder: "assets/uploads"         # dossier où les fichiers seront stockés dans le repo
+public_folder: "/assets/uploads"       # dossier public équivalent sur le site
+
+locale: "fr"
+publish_mode: simple
+
+# Option recommandée pour éviter les erreurs de cache ou d’auth
+site_url: "https://proandbeauty-partenariat.vercel.app"  # ← adapte si ton domaine change
+
+collections:
+  - name: "site"
+    label: "Contenu du site"
+    files:
+      - file: "content.json"
+        label: "Textes & contenu"
+        name: "content"
+        fields:
+          - { label: "Titre Hero", name: "heroTitle", widget: "string" }
+          - { label: "Sous-titre Hero", name: "heroSubtitle", widget: "text" }
+          - { label: "Texte CTA principal", name: "primaryCtaText", widget: "string" }
+          - { label: "Texte CTA secondaire", name: "secondaryCtaText", widget: "string" }
+
+          - label: "Cartes flottantes"
+            name: "floatingCards"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Icône (FontAwesome)", name: "icon", widget: "string", required: false }
+              - { label: "Image (URL)", name: "image", widget: "string", required: false }
+
+          - label: "Avantages"
+            name: "advantages"
+            widget: "list"
+            fields:
+              - { label: "Icône (FontAwesome)", name: "icon", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Texte", name: "text", widget: "text" }
+
+          - { label: "Titre Actions", name: "actionsTitle", widget: "string" }
+          - { label: "Sous-titre Actions", name: "actionsSubtitle", widget: "text" }
+          - label: "Liste Actions"
+            name: "actionsList"
+            widget: "list"
+            field: { label: "Élément", name: "item", widget: "string" }
+
+          - { label: "Titre Contact", name: "contactTitle", widget: "string" }
+          - { label: "Texte Contact", name: "contactParagraph", widget: "text" }
+          - { label: "Téléphone", name: "contactPhone", widget: "string" }
+          - { label: "Email", name: "contactEmail", widget: "string" }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Slogan", name: "tagline", widget: "string" }
+              - { label: "Année", name: "year", widget: "string" }
+              - { label: "Marque", name: "brand", widget: "string" }
+              - label: "Liens"
+                name: "links"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "URL", name: "href", widget: "string" }
+
+          - { label: "Formspree Endpoint", name: "formspreeEndpoint", widget: "string" }
