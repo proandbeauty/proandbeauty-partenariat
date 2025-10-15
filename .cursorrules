@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "rules": [
+    {
+      "name": "HTML Snippets for CKEditor",
+      "scope": "html",
+      "settings": {
+        "inlineStyles": false,
+        "transformations": [
+          {
+            "type": "css",
+            "action": "preserve",
+            "selector": "*",
+            "properties": ["all"]
+          },
+          {
+            "type": "script", 
+            "action": "inline",
+            "selector": "script",
+            "attributes": ["src"]
+          },
+          {
+            "type": "style",
+            "action": "preserve",
+            "selector": "style"
+          }
+        ],
+        "cleanupRules": {
+          "removeComments": true,
+          "removeEmptyElements": true,
+          "removeEmptyAttributes": true,
+          "convertStylesheets": false,
+          "preserveClasses": true,
+          "scopeStyles": true
+        },
+        "validation": {
+          "allowedTags": [
+            "div", "p", "span", "img", "h1", "h2", "h3", "h4", "h5", "h6",
+            "ul", "ol", "li", "table", "tr", "td", "th", "thead", "tbody",
+            "strong", "em", "br", "a", "style"
+          ],
+          "allowedAttributes": {
+            "*": ["class", "id", "onclick", "onmouseover", "onmouseout", "onmouseenter", 
+                 "onmouseleave", "onhover", "onblur", "onfocus", "onchange", "onkeyup", 
+                 "onkeydown", "onkeypress", "ondblclick", "onsubmit"],
+            "img": ["src", "alt", "width", "height"],
+            "a": ["href", "target"],
+            "style": ["type", "scoped"]
+          }
+        },
+        "output": {
+          "format": "html",
+          "indentation": "  ",
+          "maxLineLength": 120,
+          "wrapAttributes": true,
+          "prefixClassNames": true,
+          "containerSelector": "#custom-ck-content"
+        }
+      }
+    },
+    {
+      "selector": ".action-card",
+      "cursor": "pointer"
+    },
+    {
+      "selector": ".icon",
+      "cursor": "pointer"
+    },
+    {
+      "selector": ".offer-card",
+      "cursor": "pointer"
+    },
+    {
+      "selector": "a",
+      "cursor": "pointer"
+    }
+  ],
+  "defaults": {
+    "cursor": "default"
+  }
+}

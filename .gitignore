@@ -1,0 +1,15 @@
+# Windows system files
+desktop.ini
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folders
+.vscode/
+.idea/
+
+# Node modules if you use them
+node_modules/
+
+# Logs
+*.log 

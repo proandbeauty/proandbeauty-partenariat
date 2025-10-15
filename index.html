@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro&Beauty - Plateforme de Communication Beauté</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header fixe avec navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Pro&Beauty</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#avantages" class="nav-link">Avantages</a></li>
+                    <li><a href="#fonctionnement" class="nav-link">Fonctionnement</a></li>
+                    <li><a href="#actions" class="nav-link">Actions Commerciales</a></li>
+                    <li><a href="#bibliotheque" class="nav-link">Bibliothèque</a></li>
+                    <li><a href="#partenaires" class="nav-link">Partenaires</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Simplifiez la communication entre les marques et leurs points de vente
+                </h1>
+                <p class="hero-subtitle">
+                    Une plateforme unique pour stocker, personnaliser et diffuser facilement vos visuels, vidéos et campagnes.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('fonctionnement')">
+                        Découvrir la plateforme
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="openModal('demo')">
+                        Voir la démo
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-palette"></i>
+                        <span>Personnalisation</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-share-alt"></i>
+                        <span>Diffusion</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-magic"></i>
+                        <span>Automatisation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Avantages -->
+    <section id="avantages" class="avantages">
+        <div class="container">
+            <h2 class="section-title">Pourquoi choisir Pro&Beauty ?</h2>
+            <div class="avantages-grid">
+                <div class="avantage-card" data-aos="fade-up">
+                    <div class="avantage-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Stockage centralisé</h3>
+                    <p>Remplacez vos Drive et Dropbox par une solution dédiée à la beauté avec une interface intuitive type Canva.</p>
+                </div>
+                <div class="avantage-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="avantage-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Personnalisation automatique</h3>
+                    <p>Vos visuels s'adaptent automatiquement avec les logos, coordonnées et couleurs de chaque point de vente.</p>
+                </div>
+                <div class="avantage-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="avantage-icon">
+                        <i class="fas fa-share-nodes"></i>
+                    </div>
+                    <h3>Programmation sociale</h3>
+                    <p>Publiez directement sur Facebook, Instagram et envoyez vos campagnes par email en un clic.</p>
+                </div>
+                <div class="avantage-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="avantage-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Actions automatisées</h3>
+                    <p>Créez des campagnes commerciales que vos clients peuvent activer instantanément.</p>
+                </div>
+                <div class="avantage-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="avantage-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Packshots professionnels</h3>
+                    <p>Accédez à une bibliothèque de packshots détourés en haute qualité pour vos créations.</p>
+                </div>
+                <div class="avantage-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="avantage-icon">
+                        <i class="fas fa-user-friendly"></i>
+                    </div>
+                    <h3>Simplicité d'usage</h3>
+                    <p>Interface intuitive accessible même aux non-experts en communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Fonctionnement -->
+    <section id="fonctionnement" class="fonctionnement">
+        <div class="container">
+            <h2 class="section-title">Comment ça marche ?</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Uploadez vos contenus</h3>
+                        <p>Importez vos images, vidéos et documents dans votre espace Pro&Beauty sécurisé.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>Personnalisez automatiquement</h3>
+                        <p>La plateforme adapte vos visuels avec les informations de chaque point de vente.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Créez vos campagnes</h3>
+                        <p>Utilisez l'éditeur visuel pour créer des campagnes personnalisées et engageantes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>Diffusez en un clic</h3>
+                        <p>Publiez sur les réseaux sociaux et envoyez vos campagnes par email instantanément.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Actions Commerciales -->
+    <section id="actions" class="actions">
+        <div class="container">
+            <div class="actions-content">
+                <div class="actions-text" data-aos="fade-right">
+                    <h2>Actions commerciales automatisées</h2>
+                    <p class="actions-subtitle">
+                        Créez des campagnes que vos clients peuvent activer en un clic, sans formation ni intervention de votre part.
+                    </p>
+                    <ul class="actions-list">
+                        <li><i class="fas fa-check"></i> Campagnes de lancement de produits</li>
+                        <li><i class="fas fa-check"></i> Promotions saisonnières</li>
+                        <li><i class="fas fa-check"></i> Fidélisation client</li>
+                        <li><i class="fas fa-check"></i> Communication événementielle</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openModal('actions')">
+                        Voir des exemples
+                    </button>
+                </div>
+                <div class="actions-visual" data-aos="fade-left">
+                    <div class="actions-demo">
+                        <div class="demo-screen">
+                            <div class="demo-header">
+                                <div class="demo-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="demo-title">Pro&Beauty - Actions Commerciales</span>
+                            </div>
+                            <div class="demo-content">
+                                <div class="demo-campaign">
+                                    <div class="campaign-preview">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDIwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjRjBGOUZGIi8+Cjx0ZXh0IHg9IjEwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjMzMzIj5Ob3V2ZWF1IFByb2R1aXQ8L3RleHQ+Cjwvc3ZnPgo=" alt="Campagne exemple">
+                                    </div>
+                                    <div class="campaign-info">
+                                        <h4>Lancement Collection Printemps</h4>
+                                        <p>Prête à être activée</p>
+                                        <button class="btn-activate">Activer maintenant</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Bibliothèque -->
+    <section id="bibliotheque" class="bibliotheque">
+        <div class="container">
+            <h2 class="section-title">Bibliothèque visuelle professionnelle</h2>
+            <div class="bibliotheque-content">
+                <div class="bibliotheque-text" data-aos="fade-right">
+                    <h3>Packshots détourés haute qualité</h3>
+                    <p>
+                        Accédez à une vaste collection de packshots détourés de produits cosmétiques, 
+                        prêts à être intégrés dans vos créations personnalisées.
+                    </p>
+                    <div class="bibliotheque-features">
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Qualité professionnelle</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-download"></i>
+                            <span>Téléchargement instantané</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-edit"></i>
+                            <span>Personnalisation facile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bibliotheque-gallery" data-aos="fade-left">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiNFNUU1RTUiLz4KPHRleHQgeD0iNzUiIHk9Ijc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5OTk5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNyw6htZTwvdGV4dD4KPC9zdmc+Cg==" alt="Produit 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiNFNUU1RTUiLz4KPHRleHQgeD0iNzUiIHk9Ijc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5OTk5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1hc3F1YWdlPC90ZXh0Pgo8L3N2Zz4K" alt="Produit 2">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiNFNUU1RTUiLz4KPHRleHQgeD0iNzUiIHk9Ijc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5OTk5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1ha2V1cDwvdGV4dD4KPC9zdmc+Cg==" alt="Produit 3">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiNFNUU1RTUiLz4KPHRleHQgeD0iNzUiIHk9Ijc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5OTk5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk5haWwgQXJ0PC90ZXh0Pgo8L3N2Zz4K" alt="Produit 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Partenaires -->
+    <section id="partenaires" class="partenaires">
+        <div class="container">
+            <h2 class="section-title">Ils nous font confiance</h2>
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="marqueSearch" placeholder="Rechercher une marque...">
+                </div>
+            </div>
+            <div class="partenaires-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Les logos seront générés par JavaScript -->
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" onclick="moveCarousel(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" onclick="moveCarousel(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-text" data-aos="fade-right">
+                    <h2>Prêt à simplifier votre communication ?</h2>
+                    <p>
+                        Rejoignez les marques qui ont déjà choisi Pro&Beauty pour optimiser 
+                        leur communication avec leurs points de vente.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>01 23 45 67 89</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@probeauty.fr</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="nom" name="nom" placeholder="Nom de votre entreprise" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email professionnel" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telephone" name="telephone" placeholder="Téléphone">
+                        </div>
+                        <div class="form-group">
+                            <select id="type" name="type" required>
+                                <option value="">Type d'entreprise</option>
+                                <option value="marque">Marque cosmétique</option>
+                                <option value="distributeur">Distributeur</option>
+                                <option value="institut">Institut de beauté</option>
+                                <option value="salon">Salon</option>
+                                <option value="spa">Spa</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Décrivez vos besoins..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Demander un accès
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Pro&Beauty</h3>
+                    <p>La plateforme qui simplifie la communication beauté</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#avantages">Avantages</a>
+                    <a href="#fonctionnement">Fonctionnement</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pro&Beauty. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modales -->
+    <div id="demoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('demo')">&times;</span>
+            <h3>Démonstration Pro&Beauty</h3>
+            <div class="modal-body">
+                <p>Découvrez comment Pro&Beauty peut transformer votre communication en quelques minutes.</p>
+                <div class="demo-video">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>Vidéo de démonstration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="actionsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('actions')">&times;</span>
+            <h3>Exemples d'actions commerciales</h3>
+            <div class="modal-body">
+                <div class="actions-examples">
+                    <div class="example-card">
+                        <h4>Lancement de produit</h4>
+                        <p>Campagne automatisée pour présenter un nouveau produit avec visuels personnalisés.</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Promotion saisonnière</h4>
+                        <p>Offres spéciales adaptées automatiquement à chaque point de vente.</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Fidélisation client</h4>
+                        <p>Programmes de fidélité avec communications ciblées.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
